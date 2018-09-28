@@ -37,7 +37,7 @@ pipeline {
     }
     stage('To deploy interactive') {
       steps {
-        input(message: 'Deploy?', submitterParameter: 'fer-release')
+        input(message: 'Deploy?', submitter: 'fer-release')
       }
     }
   }
